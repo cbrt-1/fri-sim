@@ -41,6 +41,8 @@ ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP
 
 6) Open the unzipped folder. Open fri-sim.x86_64. Follow the launch screen instructions below:
 
+7) Read the note at the top of the page to also run the python node to uncompress the rgb image.
+
 
 ## Launch Screen
 1) Click the input field
