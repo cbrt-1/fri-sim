@@ -6,7 +6,7 @@
 ```
 /camera/depth/image
 /camera/depth/camera_info
-/camera/depth/points (the red and blue channels are reversed due to endian-ess but it shouldn't matter too much)
+/camera/depth/points (shouldn't need to use this)
 /camera/color/image/compressed
 /camera/color/camera_info
 ```
