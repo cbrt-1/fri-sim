@@ -4,13 +4,13 @@
 - Use the sim to figure out how to use rtabmap.
 - The sim publishes the bare minimum topic in order for rtabmap to work
 ```
-/camera/depth/image/compressed
-/camera/depth/info
-/camera/depth/points
+/camera/depth/image
+/camera/depth/camera_info
+/camera/depth/points (the red and blue channels are reversed due to endian-ess but it shouldn't matter too much)
 /camera/color/image/compressed
-/camera/color/info
+/camera/color/camera_info
 ```
-NOTE: In order to visualize the rgb topic, you need to uncompress the image. Attached to this repo is a python script that does this. Simply copy it into your machine and run python3 decompressor.py.
+NOTE: In order to visualize the rgb topic, you need to uncompress the image. Attached to this repo is a python script that does this. Copy it into your machine and run `python3 decompressor.py`.
 
 - Rtabmap should work with just rgb image, depth, and camera info. The question to answer is how to get it to work.
 
@@ -46,11 +46,9 @@ ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP
 1) Click the input field
 2) Copy the IP address from step 4 into here as well.
 3) Click \<enter\> on the keyboard.
-4) Click \<P\> on the keyboard.
+4) Click the enter button the the screen.
 
 Controls:
-
-\<P\>: Starts the simulator
 
 \<K\>: Kill the simulator (use this to exit)
 
@@ -61,6 +59,6 @@ Controls:
 
 \<Mouse\>: Drag the mouse to look around.
 
-\<Space\>: Locks the mouse to the center of the screen, you can unlock it by clicking \<Space\> again.
+\<Space\>: Locks the mouse to the center of the screen, you can unlock it by clicking \<Space\> again. (may or may not work)
 
 \<K\>: Kill the simulator (use this to exit)
