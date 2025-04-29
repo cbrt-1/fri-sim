@@ -49,12 +49,18 @@ ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=<your IP
 4) Click \<P\> on the keyboard.
 
 Controls:
+
 \<P\>: Starts the simulator
+
 \<K\>: Kill the simulator (use this to exit)
 
 ## Simulator Screen
 Controls:
-\<WASD\>: WASD moves the robot around.
-\<Mouse\>: Look around the robot.
+
+\<WASD\>: Hold WASD to move the robot around.
+
+\<Mouse\>: Drag the mouse to look around.
+
 \<Space\>: Locks the mouse to the center of the screen, you can unlock it by clicking \<Space\> again.
+
 \<K\>: Kill the simulator (use this to exit)
